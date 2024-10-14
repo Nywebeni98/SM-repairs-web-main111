@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Appliance Repairs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container-fluid sub-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <ul class="left-info">
+                        <li><a href="#"><i class="fa fa-envelope"></i> nywebenilm@gmail.com</a></li>
+                        <li><a href="#"><i class="fa-solid fa-phone"></i> 090-080-0760</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="right-icons">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid main-banner">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="logo" href="#">S.M Appliance Repairs</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#" id="login-signup-btn">Login/Signup</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="login-wrap">
+                <div class="login-html">
+                    <span class="close-btn">&times;</span>
+                    <input id="tab-1" type="radio" name="tab" class="sign-in" checked>
+                    <label for="tab-1" class="tab">Sign In</label>
+                    <input id="tab-2" type="radio" name="tab" class="sign-up">
+                    <label for="tab-2" class="tab">Sign Up</label>
+                    <div class="login-form">
+                        <!-- Sign In Form -->
+                        <div class="sign-in-htm">
+                            <div class="group">
+                                <label for="user" class="label">Username</label>
+                                <input id="user" type="text" class="input">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Password</label>
+                                <input id="pass" type="password" class="input" data-type="password">
+                            </div>
+                            <div class="group">
+                                <input id="check" type="checkbox" class="check" checked>
+                                <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                            </div>
+                            <div class="group">
+                                <input type="button" class="button" value="Sign In" onclick="signIn()">
+                            </div>
+                            <div class="hr"></div>
+                            <div class="foot-lnk">
+                                <a href="#" onclick="forgotPassword()">Forgot Password?</a>
+                            </div>
+                        </div>
+
+                        <!-- Sign Up Form -->
+                        <div class="sign-up-htm">
+                            <div class="group">
+                                <label for="user-signup" class="label">Username</label>
+                                <input id="user-signup" type="text" class="input">
+                            </div>
+                            <div class="group">
+                                <label for="pass-signup" class="label">Password</label>
+                                <input id="pass-signup" type="password" class="input" data-type="password">
+                            </div>
+                            <div class="group">
+                                <label for="repeat-pass" class="label">Repeat Password</label>
+                                <input id="repeat-pass" type="password" class="input" data-type="password">
+                            </div>
+                            <div class="group">
+                                <label for="email" class="label">Email Address</label>
+                                <input id="email" type="text" class="input">
+                            </div>
+                            <div class="group">
+                                <input type="button" class="button" value="Sign Up" onclick="signUp()">
+                            </div>
+                            <div class="hr"></div>
+                            <div class="foot-lnk">
+                                <a href="#" onclick="Alreadyamember()">Already a member </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar-end -->
+    <!-- text content -->
+    <div class="text-content">
+        <h6>We have a solid background</h6>
+        <h4>Repair and Maintenance Services</h4>
+        <p>We specialize in repairing earth leakage, home domestic appliances, and single-phase wiring, ensuring safety and efficiency. We also offer electrical installations, inspections, and emergency services. Our technicians are skilled in identifying
+            potential hazards, ensuring compliance with safety regulations, and providing prompt and reliable solutions.</p>
+        <a href="#" class="service-btn">OUR SERVICES</a>
+    </div>
+    </div>
+    <!-- request section -->
+    <div class="container-fluid request-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h4>Request a call back right now ?</h4>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="request-btn">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- services -->
+    <div class="container services">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="services-heading">
+                    <h2>Our
+                        <em>Services</em>
+                    </h2>
+                </div>
+            </div>
+
+            <!-- Maintenance Service -->
+            <div class="col-md-4">
+                <div class="service-item">
+                    <i class="fas fa-tools fa-3x"></i>
+                    <div class="down-content">
+                        <h4>Maintenance</h4>
+                        <p>fridges,washing machines, microwaves</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Electrical Service -->
+            <div class="col-md-4">
+                <div class="service-item">
+                    <i class="fas fa-bolt fa-3x"></i>
+                    <div class="down-content">
+                        <h4>Electrical</h4>
+                        <p>earth leakages, tripping breakers</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plumbing Service -->
+            <div class="col-md-4">
+                <div class="service-item">
+                    <i class="fas fa-shower fa-3x"></i>
+                    <div class="down-content">
+                        <h4>Plumbing</h4>
+                        <p>Toilet, shower, and sink installations.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- services end -->
+
+
+
+
+    <!-- More Detail -->
+    <div class="more-detail">
+        <div class="container">
+            <div class="more-info-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="https://i.postimg.cc/qMxGJWgP/technician-8532323-1280.jpg">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="right-content">
+                            <span>Who we are</span>
+                            <h2>Get to know about <em>our services</em></h2>
+                            <p>
+                                We are your trusted partner for all things related to domestic appliances. Whether you're looking to buy a new appliance or need expert repairs, we've got you covered. Our services include single-phase electrical wiring, camera installations, and ongoing
+                                maintenance. Operating throughout the Western Cape, we ensure that your home or business stays powered, secure, and well-maintained. Reliable, professional, and here to make your life easier!
+                                <span id="dots">...</span>
+                                <span id="more" style="display:none; text-transform: lowercase"> As your go-to experts in the Western Cape, we specialize in domestic appliance sales and repairs. Whether you need to purchase new appliances or have them expertly fixed, we deliver with precision. We also provide professional single-phase wiring services, camera installations for security, and reliable maintenance to keep everything running smoothly. Trust us to power your home and protect what matters most—where quality service meets convenience!</span>
+                            </p>
+                            <button onclick="toggleReadMore()" id="readMoreBtn" class="filled-button">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleReadMore() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("readMoreBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read More";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read Less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+
+    <style>
+        /* Ensures hidden text has the same font style */
+        
+        #more {
+            font-size: inherit;
+            line-height: inherit;
+        }
+        /* Style for the button to be blue */
+        
+        #readMoreBtn {
+            background-color: rgb(15, 150, 235);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        /* Add hover effect */
+        
+        #readMoreBtn:hover {
+            background-color: rgb(97, 97, 206);
+        }
+    </style>
+
+
+
+
+
+    <!-- Testimonial -->
+    <div class="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>What they say <em>about us</em></h2>
+                        <span>TESTIMONIALS FROM OUR GREATEST CLIENTS</span>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="testimonial-item">
+                                <div class="testimonail-content">
+                                    <h4> Walker George</h4>
+                                    <span>Plumbing</span>
+                                    <p>"The service i got from them was satisfying and i would recommend it anyday,The service i got from them was satisfying and i would recommend it anyday"</p>
+                                </div>
+                                <div class="img">
+                                    <img src="http://via.placeholder.com/60x60">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="testimonial-item">
+                                <div class="testimonail-content">
+                                    <h4>George Walker</h4>
+                                    <span> Electrical</span>
+                                    <p>"The service i got from them was satisfying and i would recommend it anyday,The service i got from them was satisfying and i would recommend it anyday."</p>
+                                </div>
+                                <div class="img">
+                                    <img src="http://via.placeholder.com/60x60">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-md-3 footer-item">
+                    <h4>Additional Pages</h4>
+                    <ul class="menu-list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">How We Work</a></li>
+                        <li><a href="#">Quick Support</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-item">
+
+                    <h4>Contact Us</h4>
+                    <div class="contact-form">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <fieldset>
+                                    <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <button type="submit" id="form-submit" class="filled-button" onclick="sendMail()">Send Message</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        function sendMail() {
+                            // Get form data
+                            const name = document.getElementById('name').value;
+                            const email = document.getElementById('email').value;
+                            const message = document.getElementById('message').value;
+
+                            // Create the mailto link
+                            const mailtoLink = `mailto:your-mailto:nywebenilm@gmail.com=Message from ${name}&body=Name: ${name}%0DEmail: ${email}%0DMessage: ${message}`;
+
+                            // Open the mailto link
+                            window.location.href = mailtoLink;
+                        }
+                    </script>
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="sub-footer">
+        <div class="row">
+            <div class="col-md-12">
+                <p>Copyright © 2024 S.M appliance repair.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
